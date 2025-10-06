@@ -4,36 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>José Antonio Díaz García - Desarrollador de Software</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
+    <header class="hero-header">
         <div class="container">
-            <div class="header-content">
-                <div class="profile-section">
-                    <div class="profile-avatar">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="profile-info">
-                        <h1 class="name">José Antonio Díaz García</h1>
-                        <p class="alias">Antuah</p>
-                        <p class="title">Desarrollador de Software</p>
-                    </div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-title-main">Desarrollador</span>
+                    <span class="hero-title-accent">Full Stack</span>
+                </h1>
+                <p class="hero-name">José Antonio Díaz García</p>
+                <p class="hero-subtitle">
+                    Me desarrollo personal y profesionalmente creando código<br>
+                    que resuelve problemas reales de forma eficiente
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-hero-primary">Ver Proyectos</button>
+                    <button class="btn btn-hero-secondary">Contactar</button>
                 </div>
-                <div class="contact-info">
-                    <div class="contact-item">
+                <div class="hero-social">
+                    <a href="https://github.com/Antuah" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    </a>
+                    <a href="mailto:jantoniodiazcontact@gmail.com" aria-label="Email">
                         <i class="fas fa-envelope"></i>
-                        <span>jantoniodiazcontact@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+52-777-565-7005</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Morelos, México</span>
+                    </a>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="mouse-wheel"></div>
                     </div>
                 </div>
             </div>
@@ -42,150 +49,172 @@
 
     <main class="main">
         <div class="container">
-            <section class="objective-section">
-                <h2 class="section-title">
-                    <i class="fas fa-bullseye"></i>
-                    Objetivo Profesional
-                </h2>
-                <p class="objective-text">
-                    Mi objetivo es seguir desarrollándome en el campo del desarrollo de software y ganar experiencia para mejorar continuamente en mi trabajo. Soy una persona responsable y muy comprometida con mi labor, y busco dar lo mejor de mí cada día.
-                </p>
+            <section class="objective-section card shadow-sm mb-4 fade-in-up">
+                <div class="card-body">
+                    <h2 class="section-title">
+                        <i class="fas fa-bullseye"></i>
+                        Objetivo Profesional
+                    </h2>
+                    <p class="objective-text">
+                        Mi objetivo es seguir desarrollándome en el campo del desarrollo de software y ganar experiencia para mejorar continuamente en mi trabajo. Soy una persona responsable y muy comprometida con mi labor, y busco dar lo mejor de mí cada día.
+                    </p>
+                </div>
             </section>
 
-            <section class="skills-section">
-                <h2 class="section-title">
-                    <i class="fas fa-code"></i>
-                    Habilidades Relevantes
-                </h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3 class="skill-category-title">Lenguajes de Programación</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">PHP</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-category-title">Tecnologías</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">React & React Native</span>
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">Figma</span>
-                            <span class="skill-tag">Laravel</span>
-                            <span class="skill-tag">HTML</span>
-                            <span class="skill-tag">Django</span>
-                            <span class="skill-tag">CSS</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-category-title">Metodologías</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">SCRUM</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-category-title">Idiomas</h3>
-                        <div class="language-skills">
-                            <div class="language">
-                                <strong>Inglés:</strong>
-                                <span>Escritura: B1 | Comprensión: B1+ | Conversación: B1 | Lectura: B1+</span>
+            <section class="skills-section card shadow-sm mb-4 fade-in-up">
+                <div class="card-body">
+                    <h2 class="section-title">
+                        <i class="fas fa-code"></i>
+                        Habilidades Relevantes
+                    </h2>
+                    <div class="skills-grid">
+                        <div class="skill-category mb-4">
+                            <h3 class="skill-category-title">Lenguajes de Programación</h3>
+                            <div class="skill-tags d-flex flex-wrap gap-2">
+                                <span class="skill-tag badge">JavaScript</span>
+                                <span class="skill-tag badge">Java</span>
+                                <span class="skill-tag badge">Python</span>
+                                <span class="skill-tag badge">PHP</span>
                             </div>
-                            <div class="language">
-                                <strong>Español:</strong>
-                                <span>Lengua nativa</span>
+                        </div>
+                        <div class="skill-category mb-4">
+                            <h3 class="skill-category-title">Tecnologías</h3>
+                            <div class="skill-tags d-flex flex-wrap gap-2">
+                                <span class="skill-tag badge">React & React Native</span>
+                                <span class="skill-tag badge">MySQL</span>
+                                <span class="skill-tag badge">Figma</span>
+                                <span class="skill-tag badge">Laravel</span>
+                                <span class="skill-tag badge">HTML</span>
+                                <span class="skill-tag badge">Django</span>
+                                <span class="skill-tag badge">CSS</span>
+                            </div>
+                        </div>
+                        <div class="skill-category mb-4">
+                            <h3 class="skill-category-title">Metodologías</h3>
+                            <div class="skill-tags d-flex flex-wrap gap-2">
+                                <span class="skill-tag badge">SCRUM</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3 class="skill-category-title">Idiomas</h3>
+                            <div class="language-skills">
+                                <div class="language mb-2">
+                                    <strong>Inglés:</strong>
+                                    <span>Escritura: B1 | Comprensión: B1+ | Conversación: B1 | Lectura: B1+</span>
+                                </div>
+                                <div class="language">
+                                    <strong>Español:</strong>
+                                    <span>Lengua nativa</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="experience-section">
-                <h2 class="section-title">
-                    <i class="fas fa-briefcase"></i>
-                    Experiencia Laboral Reciente
-                </h2>
-                <div class="experience-timeline">
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h3 class="job-title">Desarrollador Web</h3>
-                            <span class="company">Prosigue S.A</span>
-                            <span class="duration">2024 - 7 Meses</span>
+            <section class="experience-section card shadow-sm mb-4 fade-in-up">
+                <div class="card-body">
+                    <h2 class="section-title">
+                        <i class="fas fa-briefcase"></i>
+                        Experiencia Laboral Reciente
+                    </h2>
+                    <div class="experience-timeline">
+                        <div class="experience-item mb-4">
+                            <div class="experience-header mb-3">
+                                <h3 class="job-title">Desarrollador Web</h3>
+                                <span class="company me-2">Prosigue S.A</span>
+                                <span class="duration badge bg-secondary">2024 - 7 Meses</span>
+                            </div>
+                            <ul class="job-responsibilities list-unstyled">
+                                <li class="mb-2">Maquetado de pantallas y desarrollo de interfaces con VUE, Tailwind CSS y Tailwind UI</li>
+                                <li>Implementación de APIs y endpoints usando PHP Laravel y JavaScript</li>
+                            </ul>
                         </div>
-                        <ul class="job-responsibilities">
-                            <li>Maquetado de pantallas y desarrollo de interfaces con VUE, Tailwind CSS y Tailwind UI</li>
-                            <li>Implementación de APIs y endpoints usando PHP Laravel y JavaScript</li>
-                        </ul>
-                    </div>
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h3 class="job-title">Desarrollador Web</h3>
-                            <span class="company">SIGEC</span>
-                            <span class="duration">2024 - 5 Meses</span>
+                        <div class="experience-item">
+                            <div class="experience-header mb-3">
+                                <h3 class="job-title">Desarrollador Web</h3>
+                                <span class="company me-2">SIGEC</span>
+                                <span class="duration badge bg-secondary">2024 - 5 Meses</span>
+                            </div>
+                            <ul class="job-responsibilities list-unstyled">
+                                <li class="mb-2">Desarrollo del área back-end consumo de API de correos en PHP con Laravel</li>
+                                <li>Desarrollo del área front-end, vistas con blade</li>
+                            </ul>
                         </div>
-                        <ul class="job-responsibilities">
-                            <li>Desarrollo del área back-end consumo de API de correos en PHP con Laravel</li>
-                            <li>Desarrollo del área front-end, vistas con blade</li>
-                        </ul>
                     </div>
                 </div>
             </section>
 
-            <div class="two-column-layout">
-                <section class="education-section">
-                    <h2 class="section-title">
-                        <i class="fas fa-graduation-cap"></i>
-                        Educación
-                    </h2>
-                    <div class="education-item">
-                        <h3 class="degree">TSU en Desarrollo de Software Multiplataforma</h3>
-                        <p class="institution">UTEZ</p>
-                        <p class="year">2022-2024</p>
-                    </div>
-                    <div class="education-item">
-                        <h3 class="degree">Carrera técnica en Administración</h3>
-                        <p class="institution">ICEL</p>
-                        <p class="year">2020-2022</p>
-                    </div>
-                </section>
+            <div class="row mb-4">
+                <div class="col-lg-6 mb-4 mb-lg-0 fade-in-left">
+                    <section class="education-section card shadow-sm h-100">
+                        <div class="card-body">
+                            <h2 class="section-title">
+                                <i class="fas fa-graduation-cap"></i>
+                                Educación
+                            </h2>
+                            <div class="education-item mb-3 pb-3 border-bottom">
+                                <h3 class="degree">TSU en Desarrollo de Software Multiplataforma</h3>
+                                <p class="institution mb-1">UTEZ</p>
+                                <p class="year mb-0">2022-2024</p>
+                            </div>
+                            <div class="education-item">
+                                <h3 class="degree">Carrera técnica en Administración</h3>
+                                <p class="institution mb-1">ICEL</p>
+                                <p class="year mb-0">2020-2022</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
 
-                <section class="certifications-section">
-                    <h2 class="section-title">
-                        <i class="fas fa-certificate"></i>
-                        Certificados y Reconocimientos
-                    </h2>
-                    <div class="certification-item">
-                        <h3 class="cert-title">Database Foundations Course</h3>
-                        <p class="cert-issuer">Oracle Academy</p>
-                        <p class="cert-year">2023</p>
-                    </div>
-                    <div class="certification-item">
-                        <h3 class="cert-title">Android Certified Application Developer</h3>
-                        <p class="cert-year">2024</p>
-                    </div>
-                    <div class="certification-item">
-                        <h3 class="cert-title">Introduction to MongoDB</h3>
-                        <p class="cert-year">2024</p>
-                    </div>
-                    <div class="certification-item highlight">
-                        <h3 class="cert-title">🏆 Primer lugar 5ta edición SWM Morelos</h3>
-                        <p class="cert-year">2024</p>
-                    </div>
-                </section>
+                <div class="col-lg-6 fade-in-right">
+                    <section class="certifications-section card shadow-sm h-100">
+                        <div class="card-body">
+                            <h2 class="section-title">
+                                <i class="fas fa-certificate"></i>
+                                Certificados y Reconocimientos
+                            </h2>
+                            <div class="certification-item mb-3 pb-3 border-bottom">
+                                <h3 class="cert-title">Database Foundations Course</h3>
+                                <p class="cert-issuer mb-1">Oracle Academy</p>
+                                <p class="cert-year mb-0">2023</p>
+                            </div>
+                            <div class="certification-item mb-3 pb-3 border-bottom">
+                                <h3 class="cert-title">Android Certified Application Developer</h3>
+                                <p class="cert-year mb-0">2024</p>
+                            </div>
+                            <div class="certification-item mb-3 pb-3 border-bottom">
+                                <h3 class="cert-title">Introduction to MongoDB</h3>
+                                <p class="cert-year mb-0">2024</p>
+                            </div>
+                            <div class="certification-item highlight p-3 rounded">
+                                <h3 class="cert-title">🏆 Primer lugar 5ta edición SWM Morelos</h3>
+                                <p class="cert-year mb-0">2024</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
 
-            <section class="references-section">
-                <h2 class="section-title">
-                    <i class="fas fa-user-friends"></i>
-                    Referencias
-                </h2>
-                <div class="reference-item">
-                    <h3 class="reference-name">Dr. Hugo Omar Alejandres Sánchez</h3>
-                    <p class="reference-position">Sub-Director de división DATID UTEZ</p>
-                    <div class="reference-contact">
-                        <p><i class="fas fa-map-marker-alt"></i> Av. Universidad Tecnológica 62765 Emiliano Zapata, Mor.</p>
-                        <p><i class="fas fa-envelope"></i> hugoalejandres@utez.edu.mx</p>
+            <section class="references-section card shadow-sm mb-4 fade-in-up">
+                <div class="card-body">
+                    <h2 class="section-title">
+                        <i class="fas fa-user-friends"></i>
+                        Referencias
+                    </h2>
+                    <div class="reference-item">
+                        <h3 class="reference-name">Dr. Hugo Omar Alejandres Sánchez</h3>
+                        <p class="reference-position mb-3">Sub-Director de división DATID UTEZ</p>
+                        <div class="reference-contact">
+                            <p class="d-flex align-items-center mb-2">
+                                <i class="fas fa-map-marker-alt me-2"></i>
+                                Av. Universidad Tecnológica 62765 Emiliano Zapata, Mor.
+                            </p>
+                            <p class="d-flex align-items-center mb-0">
+                                <i class="fas fa-envelope me-2"></i>
+                                hugoalejandres@utez.edu.mx
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -194,8 +223,19 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 José Antonio Díaz García. Todos los derechos reservados.</p>
+            <p class="mb-0">&copy; 2024 José Antonio Díaz García. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- Botón Scroll to Top -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scroll Animations Script -->
+    <script src="script.js"></script>
 </body>
 </html>
